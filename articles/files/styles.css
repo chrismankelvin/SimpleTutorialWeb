@@ -1,0 +1,29 @@
+*
+body{
+    background-color: rgb(253, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+}
+h1{
+    text-align: center;
+    color: rgb(78, 76, 76);
+}
+.terms p {
+    text-align: center;
+    font-size: 14px;
+}
+h2{
+    text-align: center;
+}
+.terms{
+    width: 50%;
+    height: 700px;
+    margin: auto;
+    border: 0.5px solid rgb(109, 108, 106);
+    background-color: rgba(238, 236, 234, 0.671);
+    padding: 10px;
+}
+.clickhere {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: rgb(230, 157, 22);
+}

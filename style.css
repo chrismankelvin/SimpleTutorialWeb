@@ -1,0 +1,296 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 100%;
+    height: 649px;
+    margin: 0px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),url(background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.body{
+    width: 99%;
+    height: 110px;
+    background-color: transparent;
+    margin: auto;
+    transform: translateY(40px);
+
+}
+.body1{
+    float: left;
+    background-color: transparent;
+    width: 20%;
+    height: 110px;
+    overflow: hidden;
+}
+.logo{
+    width: 190px;
+    height: auto;
+    margin-left: 100px;
+
+}
+.body2{
+    float: right;
+    background-color: transparent;
+    width: 40%;
+    height: 55px;
+    margin-top: 20px;
+    overflow: hidden;
+    transform: translateX(-40px);
+}
+ul li{
+    list-style: none;
+    display: inline;
+    margin: 30px 0 0 0;
+    padding: 30px;
+    
+    
+}
+ul li a{
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #0cf5c2ee;
+    line-height: 55px;
+
+}
+ul li a:hover{
+    color: orange;
+    transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.active{
+    color: orange;
+}
+
+h1{
+    text-align: center;
+    margin-top: 150px;
+    font-weight: 3000;
+    font-size: 70px;
+    color: #0cf5c2ee;
+    text-transform: uppercase;
+}
+p{
+    text-align: center;
+    font-size: 17px;
+    color: rgb(245, 244, 244);
+    font-family: Arial, Helvetica, sans-serif;
+    word-spacing: normal;
+    margin-bottom: 20px;
+    word-spacing: 1px;
+
+}
+.clickhere{
+    text-decoration: none;
+    color: orange;
+    text-transform: capitalize;
+}
+.buts{
+    width: 38%;
+    height: 70px;
+    background-color: transparent;
+    margin: auto;
+}
+button{
+    width: 40%;
+    height: 49px;
+    margin: 10px 10px 10px 12px;
+    border: 2px  solid #0cf5c2ee;
+    background-color: transparent;
+    border-radius: 45px;
+}
+button a{
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: whitesmoke;
+}
+button:hover{
+    background-color: #32a88fee;
+    border: 1px solid #32a88fee;
+    transition: 0.34s ease;
+}
+.onebutton{
+    width: 40%;
+    height: 49px;
+    margin: 10px 10px 10px 12px;
+    border: 2px  solid #0cf5c2ee;
+    background-color: transparent;
+    border-radius: 45px;
+    transform: translateX(140px);
+}
+
+
+@media screen and (max-width: 600px) {
+    .container{
+        height: 700px;
+    }
+    .body{
+        height: 90px;
+        transform: translateY(5px);
+    }
+    .body1{
+        width: 0%;
+    }
+    .body2{
+        width: 100%;
+        transform: translateX(12px);
+        padding: 0 0 0 0;
+    }
+    ul li{
+        margin: -8px;
+    }
+    ul li a{
+        font-size: 10px;
+    }
+
+    h1{
+        font-size: 29px;
+        margin-top: 40px;
+        margin-bottom: 15px;
+    }
+    p{
+        font-size: small;
+    }
+    .buts{
+        width: 70%;
+    }
+    button{
+        width: 40%;
+        border-radius: 10px;
+        height: 30px;
+    }
+    button a{
+        font-size: 9px;
+    }
+}
+@media screen  and (width: 820px) {
+    .body{
+        transform: translateY( 15px);
+        height: 90px;
+    }
+    .body1{
+        width: 22%;
+        height: 80px;
+    }
+    .body2{
+        width: 60%;
+        transform: translateX(22px);
+    }
+    .logo{
+        width: 150px;
+        margin: 10px 0 0 0;
+    }
+    ul li a{
+        font-size: 10px;
+    }
+    h1{
+        margin-top: 70px;
+        font-size: 60px;
+        margin-bottom: 20px;
+    }
+    p{
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+    .buts{
+        width: 49%;
+    }
+    button{
+        width: 40%;
+        height: 35px;
+    }
+    button a{
+        font-size: 11px;
+    }
+}
+@media screen  and (width: 768px) {
+    .container{
+        height: 1024px;
+    }
+    .body{
+        transform: translateY( 15px);
+        height: 90px;
+    }
+    .body1{
+        width: 22%;
+        height: 80px;
+    }
+    .body2{
+        width: 60%;
+        transform: translateX(22px);
+    }
+    .logo{
+        width: 150px;
+        margin: 10px 0 0 0;
+    }
+    ul li a{
+        font-size: 10px;
+    }
+    h1{
+        margin-top: 70px;
+        font-size: 60px;
+        margin-bottom: 20px;
+    }
+    p{
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+    .buts{
+        width: 49%;
+    }
+    button{
+        width: 40%;
+        height: 35px;
+    }
+    button a{
+        font-size: 11px;
+    }
+}
+@media screen  and (width: 912px) {
+    .body{
+        transform: translateY( 15px);
+        height: 90px;
+    }
+    .body1{
+        width: 22%;
+        height: 80px;
+    }
+    .body2{
+        width: 60%;
+        transform: translateX(22px);
+    }
+    .logo{
+        width: 150px;
+        margin: 10px 0 0 0;
+    }
+    ul li a{
+        font-size: 10px;
+    }
+    h1{
+        margin-top: 70px;
+        font-size: 60px;
+        margin-bottom: 20px;
+    }
+    p{
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+    .buts{
+        width: 49%;
+    }
+    button{
+        width: 40%;
+        height: 35px;
+    }
+    button a{
+        font-size: 11px;
+    }
+}
