@@ -32,6 +32,7 @@
 .top ul li a {
     text-decoration: none;
     color: #0cf5c2ee;   
+    font-size: 14px;
 }
 .top ul li::after {
     content: '';
@@ -92,7 +93,7 @@
 }
 .top3 .top31{
     background-color: rgb(255, 255, 255);
-    height: 1000px;
+    height: 1300px;
     width: 60%;
     float: left;
 }
@@ -116,7 +117,7 @@
     padding-top: 20px;
     text-decoration: none;
     display: flex;
-    font-size: 20px;
+    font-size: 19px;
     cursor: pointer;
 }
 .links:hover{
@@ -125,12 +126,17 @@
     font-size: 21px;
 }
 .clickhere{ 
-    text-decoration: underline;
+    text-decoration: none;
+    text-transform: capitalize;
     color: orange;
+
 }
 .top2 li.active a{
     color: orange;
     font-size: 17px;
+}
+.p1{
+    font-size: 18px;
 }
 
 
@@ -211,4 +217,14 @@
         font-size: 11px;
     }
 
-}        
+}
+.pmain {
+    font-size: 18px;
+}       
+.h4{
+    text-transform: uppercase;
+    font-size: 39px;
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+}
