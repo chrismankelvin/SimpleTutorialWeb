@@ -1,0 +1,11 @@
+*
+.main{
+    text-align: center;
+    padding: 50px;
+    color: dimgray;
+
+}
+.main a{
+    text-decoration: none;
+    color: orange;
+}
