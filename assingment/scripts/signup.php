@@ -1,17 +1,31 @@
 <?php
-include "dbconn.php";
+$servername = "localhost:3306";
+$username = "chrismankelvin_users";
+$password = "******";
+$dbname = "chrismankelvin_joomla_3";
 
-$name = $_POST['name'];
-$email = $_POST['email'];
-$country = $_POST['country'];
-$grpname = $_POST['grpname'];
-$grplink = $_POST['grplink'];
+$conn = mysqli_connect($servername, $username, $password, $dbname);
 
-$sql = "INSERT INTO requests (user_name, user_email, user_country, user_group, user_link)
-VALUES ('$name', '$email', '$country', '$grpname', '$grplink')";
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+echo "Connected successfully";
 
-mysqli_query($conn, $sql);
+mysqli_close($conn);
+
+// $name = $_POST['name'];
+// $email = $_POST['email'];
+// $country = $_POST['country'];
+// $grpname = $_POST['grpname'];
+// $grplink = $_POST['grplink'];
+
+// $sql = "INSERT INTO requests (user_name, user_email, user_country, user_group, user_link)
+// VALUES ('$name', '$email', '$country', '$grpname', '$grplink')";
+
+// mysqli_query($conn, $sql);
     
-header("Location: ../sucess.html?signup=success");
+// header("Location: ../sucess.html?signup=success");
+?>
+
 
 ?>
