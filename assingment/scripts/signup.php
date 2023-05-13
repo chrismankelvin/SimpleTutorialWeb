@@ -9,23 +9,20 @@ $conn = mysqli_connect($servername, $username, $password, $dbname);
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
-echo "Connected successfully";
 
-mysqli_close($conn);
+$name = $_POST['name'];
+$email = $_POST['email'];
+$country = $_POST['country'];
+$grpname = $_POST['grpname'];
+$grplink = $_POST['grplink'];
 
-// $name = $_POST['name'];
-// $email = $_POST['email'];
-// $country = $_POST['country'];
-// $grpname = $_POST['grpname'];
-// $grplink = $_POST['grplink'];
+$sql = "INSERT INTO requests (user_name, user_email, user_country, user_group, user_link)
+VALUES ('$name', '$email', '$country', '$grpname', '$grplink')";
 
-// $sql = "INSERT INTO requests (user_name, user_email, user_country, user_group, user_link)
-// VALUES ('$name', '$email', '$country', '$grpname', '$grplink')";
-
-// mysqli_query($conn, $sql);
+mysqli_query($conn, $sql);
     
-// header("Location: ../sucess.html?signup=success");
-?>
+header("Location: ../sucess.html?signup=success");
+
 
 
 ?>
