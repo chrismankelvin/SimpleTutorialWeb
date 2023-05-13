@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css?v=1">
+    <title>Request Page</title>
+</head>
+<body>
+    <main class="main">
+        <form action="./scripts/Post.php" method="post" >
+        <div class="holder">
+            <div class="icn1"></div>
+            <div class="sub-holder1">
+                <input type="text" name="first" placeholder="First Name">
+                <input type="text"name="last" placeholder="Last Name">
+            </div>
+            <div class="sub-holder2">
+                <!-- <label for="email">E-mail</label> -->
+                <input type="email" name="email" placeholder="Enter Your E-mail">
+            </div>
+            <div class="sub-holder3">
+                <p>Enter Your Request Here</p>
+                <textarea name="requested" id="" cols="30" rows="10"></textarea>
+                <div class="sub-holder4">
+                    <a href="">
+                        <button name="submit" type="submit">Submit Request</button>
+                </a>
+                </div>
+
+            </div>
+           
+
+        </div>
+
+    </form>
+    </main>
+    
+</body>
+</html>

@@ -6,13 +6,11 @@
 }
 .main {
     width: 100%;
-    height: 100%;
-    
+    height: 1000px;
 }
 .top{
-    width: 90%;
+    width: 98%;
     margin: auto;
-    padding: 35px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -50,24 +48,23 @@
 .articles {
     text-decoration: none;
     text-align: center;
-    font-size: 40px;
+    font-size: 26px;
     text-transform: uppercase;
     color: orange;
 }
 .articles:hover{
-    font-size: 45px;
+    font-size: 30px;
     transition: 0.5s ease-in-out;
 }
 .top2{
-    width: 90%;
+    width: 98%;
     margin: auto;
-    padding: 35px;
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: space-between;
-    background-color: #ffffffee;
+    background-color: navy;
     background-position: center;
-    height: 10px;
+    height: 100px;
 }
 .top2 li{
     list-style: none;
@@ -85,28 +82,33 @@
     font-size: 17px;
 }
 .top3 {
-    width: 90%;
+    width: 98%;
     height: 2000px;
-    margin: 1px;
-    padding: 35px;
-    background-color: rgb(255, 255, 255);
+    background-color: bisque;
+    margin: auto;
 }
 .top3 .top31{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(64, 190, 64);
     height: 1300px;
     width: 60%;
     float: left;
+    padding: 10px;
+    margin-left:20px ;
 }
 .top3 .top32{
-    background-color: rgb(255, 255, 255);
+    background-color: grey;
     width: 30%;
     height: 600px;
     float: right;
+    text-align: center;
+    padding: 25px;
+    border-left: 4px solid #0cf5c2ee;
+    margin-right: 20px;
 }
 .top3 .img {
-    width: 400px;
+    width: 70%;
     height: auto;
-    align-items: center;
+    border: 2px solid orange;
 }
 .h1 {
     font-size: bold;
@@ -119,6 +121,8 @@
     display: flex;
     font-size: 19px;
     cursor: pointer;
+    text-align: center;
+    color: aliceblue;
 }
 .links:hover{
     color: orange;
@@ -136,15 +140,19 @@
     font-size: 17px;
 }
 .p1{
+    font-size: 17px;
+    text-align: center;
+}
+.top3 .top31 .pmain {
     font-size: 18px;
+    text-align: center;
+    color: violet;
 }
 
 
 
 
-
-
-@media screen and (max-width: 600px) {
+ @media screen and (max-width: 600px) {
     .top .logo{
         width: 100px;
     }
@@ -218,9 +226,7 @@
     }
 
 }
-.pmain {
-    font-size: 18px;
-}       
+       
 .h4{
     text-transform: uppercase;
     font-size: 39px;
