@@ -1,52 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>homepage</title>
+    <link rel="stylesheet" href="style.css?v=1">
+    <title>Request Page</title>
 </head>
-
 <body>
-    <div class="container">
-        <div class="body">
-            <div class="body1">
-                <img src="logo.png" class="logo">
+    <main class="main">
+        <form action="./scripts/Post.php" method="post" >
+        <div class="holder">
+            <div class="icn1"></div>
+            <div class="sub-holder1">
+                <input type="text" name="first" placeholder="First Name">
+                <input type="text"name="last" placeholder="Last Name">
+            </div>
+            <div class="sub-holder2">
+                <!-- <label for="email">E-mail</label> -->
+                <input type="email" name="email" placeholder="Enter Your E-mail">
+            </div>
+            <div class="sub-holder3">
+                <p>Enter Your Request Here</p>
+                <textarea name="requested" id="" cols="30" rows="10"></textarea>
+                <div class="sub-holder4">
+                    <a href="">
+                        <button name="submit" type="submit">Submit Request</button>
+                </a>
+                </div>
 
             </div>
-            <div class="body2">
-                <ul>
-                    <li><a class="active" href="">home</a></li>
-                    <li><a href="./articles/index.html">articles</a></li>
-                    <li><a href="services.html">services</a></li>
-                    <li><a href="about.html">about</a></li>
-                </ul>
+           
 
-            </div>
         </div>
-        <h1>SIMPLE TUTORIAL</h1>
-            <p>Welcome to Simple Tutorial's website, Here we deliver only comprehensive well captured tutorials
-                presented in videos. <br>
-                 We provide Hacks, Tricks, Tips in simple videos, our services are completely free services. <br>
-                  We are happy to have you on this site.
-                You can request any tutorial any time through this web. <br>
-                 SIMPLE TUTORIALS, MAKE IT SIMPLE.
-            </p>
 
-            <div class="buts">
-                <button>
-                    <a href="./assingment/index.html">WATCH tutorials</a>
-                </button>
-                <button>
-                    <a href="./SimpleTutRequestPage/index.html">read articles</a>
-                </button>
-        
-            </div>
-    </div>
-   
-
+    </form>
+    </main>
+    
 </body>
-
 </html>
